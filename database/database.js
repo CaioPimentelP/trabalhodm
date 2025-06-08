@@ -58,7 +58,7 @@ const createTable = async () => {
   }
 };
 
-const salvarDados = async (assunto, topicos) => {
+const salvarDados = async (assunto, topicos, materia) => {
   try {
     const db = await dbPromise;
 
@@ -79,7 +79,7 @@ const salvarDados = async (assunto, topicos) => {
     }
 
     let materiaId;
-    const materiaNome = 'Matemática';
+    const materiaNome = materia;
 
     const resultadoMateria = await db.getFirstAsync(
       'SELECT id FROM materia WHERE nome = ? LIMIT 1;',
