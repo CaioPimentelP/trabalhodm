@@ -59,7 +59,7 @@ export const gerarPrompt = async (entrada: PlanoEstudoProps) => {
       throw erro;
     }
 
-    await salvarDados(entrada.assunto, topicos);
+    await salvarDados(entrada.assunto, topicos,  entrada.materia);
   } catch (erro) {
     throw erro;
   }
