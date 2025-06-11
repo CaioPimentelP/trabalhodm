@@ -17,7 +17,7 @@ Antes de instalar e rodar o aplicativo, certifique-se de ter os seguintes pré-r
     ```bash
     npm install -g expo-cli
     ```
-
+* **Chave da API do ChatGPT:** É necessário uma chave da API para utilizá-la na função `callOpenAI`.
 ---
 
 ## Instalação
